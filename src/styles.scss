@@ -1,1 +1,274 @@
-/* You can add global styles to this file, and also import other style files */
+// project variables
+
+$headerHeight: 56px;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+}
+.section {
+  position: relative;
+  z-index: 2;
+}
+
+// custom button
+.myCustomButton {
+  align-self: center;
+  border-radius: 4px;
+  background: linear-gradient(to right, #67b26b, #4ca2cb);
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 1rem 0;
+  width: 200px;
+  transition: all 0.4s;
+  // cursor: pointer;
+  margin: 5px;
+
+  span {
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+  }
+  span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  &:hover span {
+    padding-right: 25px;
+  }
+  &:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+// all the styles for responsive behaviour are below
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width: 320px) {
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .home-page {
+    &-container {
+      margin-top: 45%;
+    }
+  }
+
+  .about-me {
+    &-content {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .my-works {
+    // &__description {
+    // }
+
+    &__content {
+      flex-direction: column;
+    }
+
+    &__image__container {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__image {
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+
+  .my-skills {
+  }
+
+  // .contact-me {
+  //   &__content {
+  //     display: flex;
+  //     justify-content: space-between;
+  //     flex-wrap: wrap;
+  //   }
+
+  //   &__form {
+  //     display: flex;
+  //     flex-direction: column;
+  //     width: 100%;
+  //     margin-bottom: 3rem;
+  //     align-items: center;
+  //     .form-group {
+  //       width: 100%;
+  //     }
+  //     button {
+  //       width: 15rem;
+  //     }
+  //   }
+  // }
+
+  .socialProfiles {
+    &__container {
+      a {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width: 481px) {
+  .section {
+    padding: 4rem 3rem;
+  }
+  .socialProfiles {
+    &__container {
+      a {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width: 641px) {
+  .home-page {
+    &-container {
+      margin-top: 23%;
+    }
+  }
+  .section {
+    padding: 4rem 5rem;
+  }
+
+  .about-me {
+    &-content {
+      flex-wrap: nowrap;
+    }
+  }
+
+  .my-works {
+    &__image {
+      width: 80%;
+      padding: 0;
+    }
+  }
+
+  // .my-skills {
+  //   &__content {
+  //     flex-wrap: nowrap;
+  //     justify-content: space-between;
+  //     .primary-skills {
+  //       flex-basis: 45%;
+  //     }
+  //     .other-skills {
+  //       flex-basis: 45%;
+  //     }
+  //   }
+  // }
+  .socialProfiles {
+    &__container {
+      a {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width: 961px) {
+  .section {
+    padding: 5rem 10rem;
+  }
+
+  .my-works {
+    &__content {
+      flex-direction: row;
+    }
+
+    &__content:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    &__description {
+      flex-basis: 40%;
+    }
+
+    &__image__container {
+      flex-basis: 60%;
+      display: flex;
+      align-items: center;
+    }
+    &__image {
+      width: 100%;
+    }
+  }
+
+  // .contact-me {
+
+  //   &__form {
+  //     width: 45%;
+  //     // margin-bottom: 0;
+  //   }
+  // }
+  .socialProfiles {
+    &__container {
+      a {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width: 1025px) {
+  .my-works {
+    &__description {
+      flex-basis: 40%;
+    }
+
+    &__image__container {
+      flex-basis: 60%;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  // .my-skills {
+  //   &__icon__container {
+  //     display: flex;
+  //     img {
+  //       margin: 1rem;
+  //       width: 4rem;
+  //       height: 4rem;
+  //     }
+  //   }
+  // }
+}
+/* hi-res laptops and desktops */
+@media (min-width: 1281px) {
+  .section {
+    padding: 5rem 12rem;
+  }
+
+  .my-works {
+    &__description {
+      flex-basis: 50%;
+    }
+
+    &__image__container {
+      flex-basis: 50%;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+<div class="section my-skills__container">
+  <h1 class="display-4">MY SKILLS</h1>
+  <hr style="background-color: #9cdcfe">
+  <div class="my-skills__content">
+    <div class="primary-skills">
+      <pre>
+<span class="variable-name">PRIMARY_SKILLS</span><span style="color: white"> = </span><span style="color: orchid">[</span>
+  <code *ngFor="let skill of primarySkills; last as isLast">
+  <span class="brackets">{{ '{' }}</span>
+    <span class="technology">technology: </span><span class="technology-name">"{{ skill.technology }}"</span><span class="comma">,</span>
+    <span class="proficiency">proficiency: </span><span class="proficiency-level">{{ skill.proficiency }}</span>
+  <span class="brackets">{{ '}' }}</span><span *ngIf="!isLast" class="comma">,</span>
+  </code>
+<span style="color: orchid">]</span>
+</pre>
+    </div>
+
+    <div class="other-skills">
+      <pre>
+<span class="variable-name">OTHER_SKILLS</span><span style="color: white"> = </span><span style="color: orchid">[</span>
+<code *ngFor="let otherSkill of otherSkills; last as isLast">
+    <span class="skill-item">{{ otherSkill }}</span><span *ngIf="!isLast" class="comma">,</span>
+</code>
+<span style="color: orchid">]</span>
+</pre>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+.my-experience {
+  &__container {
+    // padding-bottom: 100vw;
+    background-color: #21252b;
+    color: white;
+
+    .display-4 {
+      font-size: 3.3rem;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+
+    & > * {
+      margin-bottom: 2.5rem;
+    }
+  }
+}

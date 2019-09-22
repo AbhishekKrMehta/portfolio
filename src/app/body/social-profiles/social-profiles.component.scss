@@ -1,0 +1,43 @@
+.socialProfiles {
+  &__container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    color: white;
+    background: #3982c3;
+    // padding: 26px;
+    z-index: -1;
+    width: 100vw;
+    // max-width: 960px;
+    // margin: 0 auto 40px;
+    // padding-bottom: 25vh;
+
+    a {
+      color: white;
+      text-decoration: none;
+      word-break: break-word;
+      transition: 0.4s;
+    }
+
+    a:hover {
+      color: #21252b;
+    }
+
+    li {
+      position: relative;
+      display: block;
+      padding: 0.75rem 1.25rem;
+      // background-color: #fff;
+      border: none;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+}

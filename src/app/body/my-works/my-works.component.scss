@@ -1,0 +1,33 @@
+.my-works {
+  &__container {
+    background-color: #e8e8e8;
+  }
+  &__content {
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: center;
+    margin: 4rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    // flex-direction: row;
+  }
+
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+  }
+
+  &__image {
+    height: auto;
+  }
+
+  &-content {
+    // display: flex;
+    // justify-content: space-evenly;
+    // align-items: center;
+    // flex-wrap: wrap;
+  }
+  
+}

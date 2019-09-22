@@ -1,0 +1,21 @@
+<div class="section my-works__container">
+  <h1 class="display-4">MY WORKS</h1>
+  <hr>
+  <div *ngFor="let work of myWorksList; let i = index" class="my-works__content">
+    <div class="my-works__image__container">
+      <img [src]="work.imageLink" alt="myPic" class="my-works__image">
+    </div>
+    <div class="my-works__description">
+      <h3>{{ work.title | uppercase }}</h3>
+      <p class="lead">{{ work.description }}</p>
+      <p class="lead">{{ work.technology }}</p>
+
+      <a class="myCustomButton" [href]="work.websiteLink" target="_blank">
+        <span>VISIT WEBSITE</span>
+      </a>
+    </div>
+  </div>
+
+  <h1 class="display-4" style="text-align: center">More coming soon...</h1>
+
+</div>
