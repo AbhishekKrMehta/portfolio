@@ -75,8 +75,6 @@ body {
   }
 
   .my-works {
-    // &__description {
-    // }
 
     &__content {
       flex-direction: column;
@@ -92,31 +90,6 @@ body {
       padding: 1rem;
     }
   }
-
-  .my-skills {
-  }
-
-  // .contact-me {
-  //   &__content {
-  //     display: flex;
-  //     justify-content: space-between;
-  //     flex-wrap: wrap;
-  //   }
-
-  //   &__form {
-  //     display: flex;
-  //     flex-direction: column;
-  //     width: 100%;
-  //     margin-bottom: 3rem;
-  //     align-items: center;
-  //     .form-group {
-  //       width: 100%;
-  //     }
-  //     button {
-  //       width: 15rem;
-  //     }
-  //   }
-  // }
 
   .socialProfiles {
     &__container {
@@ -165,18 +138,6 @@ body {
     }
   }
 
-  // .my-skills {
-  //   &__content {
-  //     flex-wrap: nowrap;
-  //     justify-content: space-between;
-  //     .primary-skills {
-  //       flex-basis: 45%;
-  //     }
-  //     .other-skills {
-  //       flex-basis: 45%;
-  //     }
-  //   }
-  // }
   .socialProfiles {
     &__container {
       a {
@@ -185,6 +146,7 @@ body {
     }
   }
 }
+
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width: 961px) {
   .section {
@@ -213,13 +175,6 @@ body {
     }
   }
 
-  // .contact-me {
-
-  //   &__form {
-  //     width: 45%;
-  //     // margin-bottom: 0;
-  //   }
-  // }
   .socialProfiles {
     &__container {
       a {
@@ -243,16 +198,6 @@ body {
     }
   }
 
-  // .my-skills {
-  //   &__icon__container {
-  //     display: flex;
-  //     img {
-  //       margin: 1rem;
-  //       width: 4rem;
-  //       height: 4rem;
-  //     }
-  //   }
-  // }
 }
 /* hi-res laptops and desktops */
 @media (min-width: 1281px) {
