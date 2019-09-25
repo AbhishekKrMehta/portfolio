@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 interface Skills {
   technology: string;
@@ -9,7 +9,7 @@ interface Skills {
   templateUrl: './my-skills.component.html',
   styleUrls: ['./my-skills.component.scss']
 })
-export class MySkillsComponent implements OnInit {
+export class MySkillsComponent {
 
   primarySkills: Skills[] = [
     {
@@ -40,6 +40,7 @@ export class MySkillsComponent implements OnInit {
 
   otherSkills = [
     'Firebase',
+    'RxJS',
     'TypeScript',
     'Angular Material',
     'Karma / Jasmine',
@@ -50,8 +51,4 @@ export class MySkillsComponent implements OnInit {
     'SASS / SCSS',
     'Photoshop'
   ];
-
-  constructor() { }
-
-  ngOnInit() { }
 }

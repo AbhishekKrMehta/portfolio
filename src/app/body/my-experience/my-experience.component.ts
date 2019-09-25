@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 interface ExperienceType {
   project: string;
@@ -13,7 +13,7 @@ interface ExperienceType {
   templateUrl: './my-experience.component.html',
   styleUrls: ['./my-experience.component.scss']
 })
-export class MyExperienceComponent implements OnInit {
+export class MyExperienceComponent {
 
   // todo: fill works array
   myExperienceList: ExperienceType[] = [
@@ -43,10 +43,4 @@ export class MyExperienceComponent implements OnInit {
       ]
     }
   ];
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
 }
