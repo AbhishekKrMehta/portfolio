@@ -13,7 +13,7 @@ export class MyWorksComponent {
       imageLink: '../../../assets/my_works_1.jpg',
       websiteLink: 'http://abhishekmehta.co/',
       description: 'You are currently viewing it :P Built using the latest version of Angular(v8) and is made completely responsive using flex layout and media query.',
-      technology: 'Technologies used : HTML5, CSS3, JavaScript/TypeScript, Angular 8, jQuery, Bootstrap 4'
+      technology: 'Technologies used : HTML5, CSS3, JavaScript/TypeScript, Angular 8, Firebase, Bootstrap 4'
     },
     {
       title: 'Cuisine',
