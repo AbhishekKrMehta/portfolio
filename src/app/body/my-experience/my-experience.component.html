@@ -11,13 +11,13 @@
       </p>
     </div>
 
-    <div class="experience-list" *ngFor="let item of myExperienceList">
-      <p class="lead">
-        <span class="font-weight-bold"> {{ item.project | uppercase}} {{ item.duration }} :</span>
-        <br>
-        {{ item.description }}
-        <br>
-        Technologies used : {{ item.technology }}</p>
+    <div class="experience-list lead" *ngFor="let experience of myExperienceList">
+      <p class="font-weight-bold"> {{ experience.project | uppercase}} {{ experience.duration }} :</p>
+      <p>{{ experience.description }}</p>
+      <p>Technologies used :
+        <span *ngFor="let tech of experience.technology; last as isLast">{{ tech }}<span *ngIf="!isLast">, </span>
+        </span>
+      </p>
     </div>
 
   </div>
