@@ -1,0 +1,84 @@
+.skills {
+    padding: 8rem 0;
+    background: var(--color-surface);
+
+    &__header {
+        max-width: 800px;
+        margin-bottom: 4rem;
+    }
+
+    &__eyebrow {
+        margin: 0 0 1rem;
+        color: var(--color-accent);
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: clamp(2.25rem, 4.5vw, 4rem);
+        font-weight: 600;
+        line-height: 1.05;
+        letter-spacing: -0.04em;
+    }
+
+    &__groups {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0;
+        border-top: 1px solid var(--color-border);
+    }
+
+    &__group {
+        padding: 2.5rem 2rem 2.5rem 0;
+        border-bottom: 1px solid var(--color-border);
+
+        &:nth-child(even) {
+            padding-left: 2rem;
+            border-left: 1px solid var(--color-border);
+        }
+
+        h3 {
+            margin: 0 0 1.5rem;
+            font-size: 1rem;
+            font-weight: 650;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            padding: 0.5rem 0.8rem;
+            border: 1px solid var(--color-border);
+            color: var(--color-text-muted);
+            font-size: 0.85rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .skills {
+        padding: 6rem 0;
+
+        &__groups {
+            grid-template-columns: 1fr;
+        }
+
+        &__group {
+            padding: 2rem 0;
+
+            &:nth-child(even) {
+                padding-left: 0;
+                border-left: 0;
+            }
+        }
+    }
+}
