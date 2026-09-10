@@ -1,7 +1,9 @@
+import './Navigation.scss'
+
 function Navigation() {
     return (
-        <nav aria-label="Main navigation">
-            <ul>
+        <nav className="navigation" aria-label="Main navigation">
+            <ul className="navigation__list">
                 <li>
                     <a href="#about">About</a>
                 </li>

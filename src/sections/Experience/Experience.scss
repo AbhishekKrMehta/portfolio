@@ -1,0 +1,86 @@
+.experience {
+    padding: 8rem 0;
+
+    &__header {
+        max-width: 800px;
+        margin-bottom: 5rem;
+    }
+
+    &__eyebrow {
+        margin: 0 0 1rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        margin: 0;
+        font-size: clamp(2rem, 4vw, 3.5rem);
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+    }
+
+    &__list {
+        border-top: 1px solid currentColor;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 180px minmax(0, 1fr);
+        gap: 3rem;
+        padding: 3rem 0;
+        border-bottom: 1px solid currentColor;
+    }
+
+    &__meta {
+        font-size: 0.9rem;
+        opacity: 0.7;
+    }
+
+    &__details {
+        max-width: 750px;
+    }
+
+    h3 {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    &__company {
+        margin: 0.35rem 0 1.5rem;
+        font-weight: 600;
+    }
+
+    &__description {
+        margin: 0;
+        line-height: 1.7;
+    }
+
+    &__technologies {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin: 1.5rem 0 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            padding: 0.35rem 0.7rem;
+            border: 1px solid currentColor;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .experience {
+        padding: 6rem 0;
+
+        &__item {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            padding: 2.5rem 0;
+        }
+    }
+}

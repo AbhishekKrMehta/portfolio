@@ -1,0 +1,20 @@
+.header {
+    position: relative;
+    z-index: 10;
+    border-bottom: 1px solid var(--color-border);
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 80px;
+    }
+
+    &__brand {
+        color: var(--color-text);
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        text-decoration: none;
+    }
+}
