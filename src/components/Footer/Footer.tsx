@@ -4,8 +4,9 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="container footer__inner">
-                <p>© {new Date().getFullYear()} Abhishek Kumar Mehta</p>
-
+                <p>
+                    Designed and developed by <a className="footer__name" href="https://www.linkedin.com/in/abhishekkumarmehta" target="_blank" rel="noreferrer">Abhishek</a> using React
+                </p>
                 <a href="#">Back to top ↑</a>
             </div>
         </footer>

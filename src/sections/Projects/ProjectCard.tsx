@@ -9,7 +9,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         <article className="project-card">
             <div className="project-card__header">
                 <p className="project-card__type">
-                    {project.featured ? 'Featured project' : 'Project'}
+                    {project.featured ? 'Featured project' : 'Personal project'}
                 </p>
 
                 <h3>{project.title}</h3>
@@ -24,6 +24,30 @@ function ProjectCard({ project }: ProjectCardProps) {
                     <li key={technology}>{technology}</li>
                 ))}
             </ul>
+
+            {(project.githubUrl || project.liveUrl) && (
+                <div className="project-card__links">
+                    {project.githubUrl && (
+                        <a
+                            href={project.githubUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            GitHub ↗
+                        </a>
+                    )}
+
+                    {project.liveUrl && (
+                        <a
+                            href={project.liveUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Live demo ↗
+                        </a>
+                    )}
+                </div>
+            )}
         </article>
     )
 }

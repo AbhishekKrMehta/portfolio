@@ -75,4 +75,23 @@
             font-size: 0.8rem;
         }
     }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        margin-top: 2rem;
+
+        a {
+            color: var(--color-accent);
+            font-size: 0.9rem;
+            font-weight: 650;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                text-underline-offset: 0.25rem;
+            }
+        }
+    }
 }

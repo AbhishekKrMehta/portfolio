@@ -23,11 +23,19 @@ function Contact() {
 
                     <div className="contact__links">
                         <a href="https://www.linkedin.com/in/abhishekkumarmehta" target="_blank" rel="noreferrer">
-                            LinkedIn
+                            LinkedIn ↗
                         </a>
 
                         <a href="https://github.com/AbhishekKrMehta" target="_blank" rel="noreferrer">
-                            GitHub
+                            GitHub ↗
+                        </a>
+
+                        <a
+                            href="/documents/Abhishek-Kumar-Mehta-CV.pdf"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            CV ↗
                         </a>
                     </div>
                 </div>

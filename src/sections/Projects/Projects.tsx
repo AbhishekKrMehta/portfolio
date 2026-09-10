@@ -6,6 +6,8 @@ export type Project = {
     description: string
     technologies: string[]
     featured?: boolean
+    githubUrl?: string
+    liveUrl?: string
 }
 
 const projects: Project[] = [
@@ -23,6 +25,21 @@ const projects: Project[] = [
             'PostgreSQL',
         ],
         featured: true,
+        githubUrl: 'https://github.com/AbhishekKrMehta/movie-compass',
+    },
+    {
+        title: 'Personal Portfolio',
+        description:
+            'A personal engineering portfolio built from scratch with React, TypeScript, Vite and SCSS. It presents my professional experience, technical skills and selected projects through a responsive interface focused on clear information architecture and maintainable component design.',
+        technologies: [
+            'React',
+            'TypeScript',
+            'Vite',
+            'SCSS',
+            'Responsive Design',
+            'Accessibility',
+        ],
+        // githubUrl: 'YOUR_PORTFOLIO_GITHUB_URL', // TODO
     },
 ]
 
