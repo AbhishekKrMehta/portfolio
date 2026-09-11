@@ -1,136 +1,135 @@
 .contact {
-    padding: 10rem 0;
-    background: var(--color-contact);
+  padding: 10rem 0;
+  background: var(--color-contact);
+  color: #fff;
+
+  &__content {
+    max-width: 850px;
+  }
+
+  &__eyebrow {
+    margin: 0 0 1.5rem;
+    color: rgb(255 255 255 / 80%);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin: 0;
     color: #fff;
+    font-size: clamp(3rem, 7vw, 6rem);
+    font-weight: 600;
+    line-height: 0.95;
+    letter-spacing: -0.055em;
+  }
 
-    &__content {
-        max-width: 850px;
+  &__description {
+    max-width: 650px;
+    margin: 2rem 0 0;
+    color: rgb(255 255 255 / 80%);
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  &__email {
+    display: inline-block;
+    max-width: 100%;
+    margin-top: 2.5rem;
+    overflow-wrap: anywhere;
+    color: #fff;
+    font-size: clamp(1.2rem, 3vw, 1.75rem);
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.35rem;
+    border-bottom: 1px solid rgb(255 255 255 / 65%);
+    transition:
+      color 150ms ease,
+      border-color 150ms ease;
+
+    &:hover {
+      color: #dcebe7;
+      border-color: #dcebe7;
     }
 
-    &__eyebrow {
-        margin: 0 0 1.5rem;
-        color: rgb(255 255 255 / 80%);
-        font-size: 0.8rem;
-        font-weight: 700;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
+    &:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 5px;
     }
+  }
 
-    h2 {
-        margin: 0;
-        color: #fff;
-        font-size: clamp(3rem, 7vw, 6rem);
-        font-weight: 600;
-        line-height: 0.95;
-        letter-spacing: -0.055em;
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    margin-top: 3rem;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      text-underline-offset: 0.25rem;
+      opacity: 0.8;
+      transition:
+        color 150ms ease,
+        opacity 150ms ease,
+        transform 150ms ease;
+
+      &:hover {
+        color: #dcebe7;
+        opacity: 1;
+        text-decoration: underline;
+        transform: translateY(-2px);
+      }
+
+      &:focus-visible {
+        outline: 2px solid #fff;
+        outline-offset: 5px;
+      }
     }
+  }
 
-    &__description {
-        max-width: 650px;
-        margin: 2rem 0 0;
-        color: rgb(255 255 255 / 80%);
-        font-size: 1.1rem;
-        line-height: 1.7;
-    }
-
-    &__email {
-        display: inline-block;
-        max-width: 100%;
-        margin-top: 2.5rem;
-        overflow-wrap: anywhere;
-        color: #fff;
-        font-size: clamp(1.2rem, 3vw, 1.75rem);
-        font-weight: 600;
-        line-height: 1.4;
-        text-decoration: none;
-        text-decoration-thickness: 1px;
-        text-underline-offset: 0.35rem;
-        border-bottom: 1px solid rgb(255 255 255 / 65%);
-        transition:
-            color 150ms ease,
-            border-color 150ms ease;
-
-        &:hover {
-            color: #dcebe7;
-            border-color: #dcebe7;
-        }
-
-        &:focus-visible {
-            outline: 2px solid #fff;
-            outline-offset: 5px;
-        }
-    }
-
-    &__links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem 2rem;
-        margin-top: 3rem;
-
-        a {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.55rem;
-            color: #fff;
-            font-size: 0.9rem;
-            font-weight: 600;
-            text-decoration: none;
-            text-underline-offset: 0.25rem;
-            opacity: 0.8;
-            transition:
-                color 150ms ease,
-                opacity 150ms ease,
-                transform 150ms ease;
-
-            &:hover {
-                color: #dcebe7;
-                opacity: 1;
-                text-decoration: underline;
-                transform: translateY(-2px);
-            }
-
-            &:focus-visible {
-                outline: 2px solid #fff;
-                outline-offset: 5px;
-            }
-        }
-    }
-
-    &__icon {
-        width: 1.15rem;
-        height: 1.15rem;
-        flex-shrink: 0;
-    }
+  &__icon {
+    width: 1.15rem;
+    height: 1.15rem;
+    flex-shrink: 0;
+  }
 }
 
 @media (width <=640px) {
-    .contact {
-        padding: 7rem 0;
+  .contact {
+    padding: 7rem 0;
 
-        &__description {
-            font-size: 1rem;
-        }
-
-        &__email {
-            margin-top: 2rem;
-            font-size: 1.2rem;
-        }
-
-        &__links {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-top: 2.5rem;
-        }
+    &__description {
+      font-size: 1rem;
     }
+
+    &__email {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+    }
+
+    &__links {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .contact {
-
-        &__email,
-        &__links a {
-            transition: none;
-        }
+  .contact {
+    &__email,
+    &__links a {
+      transition: none;
     }
+  }
 }

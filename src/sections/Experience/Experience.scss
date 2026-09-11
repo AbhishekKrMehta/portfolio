@@ -1,192 +1,192 @@
 .experience {
-    padding: 8rem 0;
-    background: var(--color-bg-muted);
+  padding: 8rem 0;
+  background: var(--color-bg-muted);
 
-    &__header {
-        max-width: 800px;
-        margin-bottom: 5rem;
+  &__header {
+    max-width: 800px;
+    margin-bottom: 5rem;
+  }
+
+  &__eyebrow {
+    margin: 0 0 1rem;
+    color: var(--color-accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin: 0;
+    color: var(--color-text);
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+  }
+
+  &__list {
+    border-top: 1px solid var(--color-border);
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 4rem;
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  &__company-column {
+    min-width: 0;
+  }
+
+  &__company {
+    margin: 0;
+    color: var(--color-accent);
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: -0.02em;
+  }
+
+  &__role {
+    margin: 0.75rem 0 0;
+    color: var(--color-text);
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  &__meta {
+    margin: 0.5rem 0 0;
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  &__projects {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    min-width: 0;
+  }
+
+  &__project {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--color-border);
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
     }
+  }
 
-    &__eyebrow {
-        margin: 0 0 1rem;
+  h3 {
+    margin: 0 0 1.5rem;
+    color: var(--color-text);
+    font-size: 1.6rem;
+    font-weight: 650;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+  }
+
+  &__highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: 0;
+    padding-left: 1.2rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+
+    li {
+      padding-left: 0.25rem;
+
+      &::marker {
         color: var(--color-accent);
-        font-size: 0.8rem;
-        font-weight: 700;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
+      }
     }
+  }
 
-    h2 {
-        margin: 0;
-        color: var(--color-text);
-        font-size: clamp(2rem, 4vw, 3.5rem);
-        font-weight: 600;
-        line-height: 1.1;
-        letter-spacing: -0.03em;
-    }
+  &__technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.75rem 0 0;
+    padding: 0;
+    list-style: none;
 
-    &__list {
-        border-top: 1px solid var(--color-border);
-    }
+    li {
+      padding: 0.35rem 0.7rem;
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
+      color: var(--color-text-muted);
+      font-size: 0.8rem;
+      line-height: 1.4;
+      transition:
+        border-color 150ms ease,
+        color 150ms ease,
+        background-color 150ms ease;
 
-    &__item {
-        display: grid;
-        grid-template-columns: 220px minmax(0, 1fr);
-        gap: 4rem;
-        padding: 3rem 0;
-        border-bottom: 1px solid var(--color-border);
-    }
-
-    &__company-column {
-        min-width: 0;
-    }
-
-    &__company {
-        margin: 0;
+      &:hover {
+        border-color: var(--color-accent);
+        background-color: rgb(23 74 66 / 4%);
         color: var(--color-accent);
-        font-size: 1.2rem;
-        font-weight: 700;
-        line-height: 1.35;
-        letter-spacing: -0.02em;
+      }
     }
-
-    &__role {
-        margin: 0.75rem 0 0;
-        color: var(--color-text);
-        font-size: 0.9rem;
-        font-weight: 600;
-        line-height: 1.5;
-    }
-
-    &__meta {
-        margin: 0.5rem 0 0;
-        color: var(--color-text-muted);
-        font-size: 0.85rem;
-        line-height: 1.6;
-    }
-
-    &__projects {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-        min-width: 0;
-    }
-
-    &__project {
-        padding-bottom: 3rem;
-        border-bottom: 1px solid var(--color-border);
-
-        &:last-child {
-            padding-bottom: 0;
-            border-bottom: 0;
-        }
-    }
-
-    h3 {
-        margin: 0 0 1.5rem;
-        color: var(--color-text);
-        font-size: 1.6rem;
-        font-weight: 650;
-        line-height: 1.2;
-        letter-spacing: -0.03em;
-    }
-
-    &__highlights {
-        display: flex;
-        flex-direction: column;
-        gap: 0.75rem;
-        margin: 0;
-        padding-left: 1.2rem;
-        color: var(--color-text-muted);
-        line-height: 1.7;
-
-        li {
-            padding-left: 0.25rem;
-
-            &::marker {
-                color: var(--color-accent);
-            }
-        }
-    }
-
-    &__technologies {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        margin: 1.75rem 0 0;
-        padding: 0;
-        list-style: none;
-
-        li {
-            padding: 0.35rem 0.7rem;
-            border: 1px solid var(--color-border);
-            border-radius: 4px;
-            color: var(--color-text-muted);
-            font-size: 0.8rem;
-            line-height: 1.4;
-            transition:
-                border-color 150ms ease,
-                color 150ms ease,
-                background-color 150ms ease;
-
-            &:hover {
-                border-color: var(--color-accent);
-                background-color: rgb(23 74 66 / 4%);
-                color: var(--color-accent);
-            }
-        }
-    }
+  }
 }
 
 @media (width <= 900px) {
-    .experience {
-        &__item {
-            grid-template-columns: 170px minmax(0, 1fr);
-            gap: 2.5rem;
-        }
-
-        &__company {
-            font-size: 1.1rem;
-        }
+  .experience {
+    &__item {
+      grid-template-columns: 170px minmax(0, 1fr);
+      gap: 2.5rem;
     }
+
+    &__company {
+      font-size: 1.1rem;
+    }
+  }
 }
 
 @media (width <= 768px) {
-    .experience {
-        padding: 6rem 0;
+  .experience {
+    padding: 6rem 0;
 
-        &__header {
-            margin-bottom: 3.5rem;
-        }
-
-        &__item {
-            grid-template-columns: 1fr;
-            gap: 2rem;
-            padding: 2.5rem 0;
-        }
-
-        &__projects {
-            gap: 2.5rem;
-        }
-
-        &__project {
-            padding-bottom: 2.5rem;
-        }
-
-        &__company {
-            font-size: 1.15rem;
-        }
-
-        h3 {
-            font-size: 1.45rem;
-        }
+    &__header {
+      margin-bottom: 3.5rem;
     }
+
+    &__item {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 2.5rem 0;
+    }
+
+    &__projects {
+      gap: 2.5rem;
+    }
+
+    &__project {
+      padding-bottom: 2.5rem;
+    }
+
+    &__company {
+      font-size: 1.15rem;
+    }
+
+    h3 {
+      font-size: 1.45rem;
+    }
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .experience {
-        &__technologies li {
-            transition: none;
-        }
+  .experience {
+    &__technologies li {
+      transition: none;
     }
+  }
 }
