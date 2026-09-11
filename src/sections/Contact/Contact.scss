@@ -68,20 +68,25 @@
         margin-top: 3rem;
 
         a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
             color: #fff;
             font-size: 0.9rem;
             font-weight: 600;
             text-decoration: none;
             text-underline-offset: 0.25rem;
-            opacity: 0.75;
+            opacity: 0.8;
             transition:
                 color 150ms ease,
-                opacity 150ms ease;
+                opacity 150ms ease,
+                transform 150ms ease;
 
             &:hover {
                 color: #dcebe7;
                 opacity: 1;
                 text-decoration: underline;
+                transform: translateY(-2px);
             }
 
             &:focus-visible {
@@ -90,9 +95,15 @@
             }
         }
     }
+
+    &__icon {
+        width: 1.15rem;
+        height: 1.15rem;
+        flex-shrink: 0;
+    }
 }
 
-@media (width <= 640px) {
+@media (width <=640px) {
     .contact {
         padding: 7rem 0;
 
@@ -116,6 +127,7 @@
 
 @media (prefers-reduced-motion: reduce) {
     .contact {
+
         &__email,
         &__links a {
             transition: none;

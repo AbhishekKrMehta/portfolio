@@ -40,7 +40,7 @@ const projects: Project[] = [
             'Responsive Design',
             'Accessibility',
         ],
-        // githubUrl: 'YOUR_PORTFOLIO_GITHUB_URL', // TODO
+        githubUrl: 'https://github.com/AbhishekKrMehta/portfolio',
     },
 ]
 

@@ -9,13 +9,13 @@ function Hero() {
                         <p className="hero__eyebrow">Full Stack Developer · Frontend Focus</p>
 
                         <h1>
-                            Engineering software
+                            I build software
                             <br />
                             that works at scale.
                         </h1>
 
                         <p className="hero__description">
-                            I'm a software engineer with 9+ years of experience building enterprise
+                            Hi! I'm Abhishek, a software engineer with 9+ years of experience building enterprise
                             applications across aviation, banking and energy. My work combines
                             frontend architecture, performance and automated testing with growing
                             expertise in Java and Spring Boot.

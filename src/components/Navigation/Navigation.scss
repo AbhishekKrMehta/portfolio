@@ -76,6 +76,7 @@
         border: 1px solid var(--color-accent);
         color: var(--color-accent) !important;
         font-weight: 650 !important;
+        border-radius: 4px;
 
         &::after {
             display: none;
@@ -88,7 +89,7 @@
     }
 }
 
-@media (width <= 768px) {
+@media (width <=768px) {
     .navigation {
         &__toggle {
             display: flex;
