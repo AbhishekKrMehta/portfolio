@@ -5,14 +5,13 @@
     min-height: calc(100vh - 70px);
     padding: 6rem 0 7rem;
     overflow: hidden;
-
     background:
         radial-gradient(circle at 85% 18%,
-            rgba(23, 74, 66, 0.1),
+            rgb(23 74 66 / 10%),
             transparent 32%),
         linear-gradient(135deg,
             #f8f5ef 0%,
-            #ffffff 58%,
+            #fff 58%,
             #f3f7f4 100%);
 
     &__layout {
@@ -100,12 +99,12 @@
 
         &--primary {
             background-color: var(--color-accent);
-            color: #ffffff;
+            color: #fff;
 
             &:hover {
                 background-color: var(--color-accent-dark);
                 border-color: var(--color-accent-dark);
-                color: #ffffff;
+                color: #fff;
             }
         }
 
@@ -116,7 +115,7 @@
             &:hover {
                 background-color: var(--color-accent);
                 border-color: var(--color-accent);
-                color: #ffffff;
+                color: #fff;
             }
         }
     }
@@ -127,12 +126,12 @@
         justify-self: end;
         overflow: hidden;
         aspect-ratio: 4 / 5;
-        border: 1px solid rgba(23, 74, 66, 0.14);
+        border: 1px solid rgb(23 74 66 / 14%);
         border-radius: 24px;
         background: var(--color-border);
         box-shadow:
-            0 20px 45px rgba(23, 74, 66, 0.12),
-            0 4px 12px rgba(0, 0, 0, 0.04);
+            0 20px 45px rgb(23 74 66 / 12%),
+            0 4px 12px rgb(0 0 0 / 4%);
     }
 
     &__image {
@@ -148,7 +147,7 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
     .hero {
         &__layout {
             grid-template-columns: minmax(0, 1fr) minmax(220px, 0.7fr);
@@ -161,7 +160,7 @@
     }
 }
 
-@media (max-width: 640px) {
+@media (width <= 640px) {
     .hero {
         min-height: auto;
         padding: 5rem 0 6rem;
@@ -207,7 +206,6 @@
 
 @media (prefers-reduced-motion: reduce) {
     .hero {
-
         &__action,
         &__image {
             transition: none;

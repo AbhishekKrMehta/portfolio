@@ -1,14 +1,11 @@
 :root {
-  --color-bg: #ffffff;
+  --color-bg: #fff;
   --color-bg-muted: #f8f5ef;
   --color-contact: #174a42;
-
   --color-accent: #174a42;
   --color-accent-dark: #123d36;
-
   --color-text: #1f2937;
   --color-text-muted: #6b7280;
-
   --color-border: #e5e7eb;
 }
 
@@ -95,7 +92,7 @@ section:not(.hero) {
   line-height: 1.7;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   section:not(.hero) {
     padding: 72px 0;
   }

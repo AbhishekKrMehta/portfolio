@@ -85,14 +85,14 @@
 
             &:hover {
                 border-color: var(--color-accent);
-                background-color: rgba(23, 74, 66, 0.04);
+                background-color: rgb(23 74 66 / 4%);
                 color: var(--color-accent);
             }
         }
     }
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
     .skills {
         &__group {
             gap: 2rem;
@@ -100,7 +100,7 @@
     }
 }
 
-@media (max-width: 640px) {
+@media (width <= 640px) {
     .skills {
         padding: 6rem 0;
 

@@ -87,7 +87,7 @@
 
             &:hover {
                 border-color: var(--color-accent);
-                background-color: rgba(23, 74, 66, 0.04);
+                background-color: rgb(23 74 66 / 4%);
                 color: var(--color-accent);
             }
         }
@@ -118,7 +118,7 @@
     }
 }
 
-@media (max-width: 640px) {
+@media (width <= 640px) {
     .projects {
         padding: 6rem 0;
 

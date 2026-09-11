@@ -1,7 +1,7 @@
 .footer {
     padding: 1.5rem 0;
     background: var(--color-contact);
-    color: #ffffff;
+    color: #fff;
 
     &__inner {
         display: flex;
@@ -27,7 +27,7 @@
     }
 
     a {
-        color: #ffffff;
+        color: #fff;
         text-decoration: none;
         transition:
             color 150ms ease,
@@ -39,12 +39,12 @@
     }
 
     a:focus-visible {
-        outline: 2px solid #ffffff;
+        outline: 2px solid #fff;
         outline-offset: 4px;
     }
 }
 
-@media (max-width: 640px) {
+@media (width <= 640px) {
     .footer {
         &__inner {
             flex-direction: column;
