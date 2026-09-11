@@ -1,5 +1,6 @@
 .experience {
     padding: 8rem 0;
+    background: var(--color-bg-muted);
 
     &__header {
         max-width: 800px;
@@ -8,21 +9,24 @@
 
     &__eyebrow {
         margin: 0 0 1rem;
+        color: var(--color-accent);
         font-size: 0.8rem;
-        font-weight: 600;
-        letter-spacing: 0.12em;
+        font-weight: 700;
+        letter-spacing: 0.14em;
         text-transform: uppercase;
     }
 
     h2 {
         margin: 0;
+        color: var(--color-text);
         font-size: clamp(2rem, 4vw, 3.5rem);
+        font-weight: 600;
         line-height: 1.1;
         letter-spacing: -0.03em;
     }
 
     &__list {
-        border-top: 1px solid currentColor;
+        border-top: 1px solid var(--color-border);
     }
 
     &__item {
@@ -30,45 +34,95 @@
         grid-template-columns: 180px minmax(0, 1fr);
         gap: 3rem;
         padding: 3rem 0;
-        border-bottom: 1px solid currentColor;
+        border-bottom: 1px solid var(--color-border);
     }
 
     &__meta {
+        color: var(--color-text-muted);
         font-size: 0.9rem;
-        opacity: 0.7;
+        line-height: 1.5;
     }
 
     &__details {
-        max-width: 750px;
+        max-width: 800px;
+    }
+
+    &__company {
+        margin: 0 0 0.5rem;
+        color: var(--color-accent);
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
     }
 
     h3 {
         margin: 0;
-        font-size: 1.5rem;
+        color: var(--color-text);
+        font-size: 1.6rem;
+        font-weight: 650;
+        letter-spacing: -0.03em;
     }
 
-    &__company {
-        margin: 0.35rem 0 1.5rem;
+    &__role {
+        margin: 0.5rem 0 1.5rem;
+        color: var(--color-text-muted);
+        font-size: 0.95rem;
         font-weight: 600;
     }
 
-    &__description {
+    &__highlights {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
         margin: 0;
+        padding-left: 1.2rem;
+        color: var(--color-text-muted);
         line-height: 1.7;
+
+        li {
+            padding-left: 0.25rem;
+
+            &::marker {
+                color: var(--color-accent);
+            }
+        }
     }
 
     &__technologies {
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
-        margin: 1.5rem 0 0;
+        margin: 1.75rem 0 0;
         padding: 0;
         list-style: none;
 
         li {
             padding: 0.35rem 0.7rem;
-            border: 1px solid currentColor;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            color: var(--color-text-muted);
             font-size: 0.8rem;
+            line-height: 1.4;
+            transition:
+                border-color 150ms ease,
+                color 150ms ease,
+                background-color 150ms ease;
+
+            &:hover {
+                border-color: var(--color-accent);
+                background-color: rgba(23, 74, 66, 0.04);
+                color: var(--color-accent);
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .experience {
+        &__item {
+            grid-template-columns: 140px minmax(0, 1fr);
+            gap: 2rem;
         }
     }
 }
@@ -77,10 +131,34 @@
     .experience {
         padding: 6rem 0;
 
+        &__header {
+            margin-bottom: 3.5rem;
+        }
+
         &__item {
             grid-template-columns: 1fr;
             gap: 1rem;
             padding: 2.5rem 0;
+        }
+
+        &__meta {
+            font-size: 0.85rem;
+        }
+
+        &__details {
+            max-width: none;
+        }
+
+        h3 {
+            font-size: 1.45rem;
+        }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .experience {
+        &__technologies li {
+            transition: none;
         }
     }
 }
