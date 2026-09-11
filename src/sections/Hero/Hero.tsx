@@ -6,23 +6,24 @@ function Hero() {
             <div className="container">
                 <div className="hero__layout">
                     <div className="hero__content">
-                        <p className="hero__eyebrow">Senior Software Engineer</p>
+                        <p className="hero__eyebrow">Full Stack Developer · Frontend Focus</p>
 
                         <h1>
-                            Building thoughtful,
+                            Engineering software
                             <br />
-                            scalable web experiences.
+                            that works at scale.
                         </h1>
 
                         <p className="hero__description">
-                            9+ years of professional experience building enterprise
-                            applications across energy, banking and aviation, with a strong
-                            frontend background and experience across Java and Spring Boot.
+                            I'm a software engineer with 9+ years of experience building enterprise
+                            applications across aviation, banking and energy. My work combines
+                            frontend architecture, performance and automated testing with growing
+                            expertise in Java and Spring Boot.
                         </p>
 
                         <p className="hero__technologies">
-                            React <span>·</span> TypeScript <span>·</span> Angular
-                            <span>·</span> Java <span>·</span> Spring Boot
+                            JavaScript <span>·</span> TypeScript <span>·</span> Angular
+                            <span>·</span> React <span>|</span> Java <span>·</span> Spring Boot
                         </p>
 
                         <div className="hero__actions">

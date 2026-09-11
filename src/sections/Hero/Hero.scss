@@ -1,8 +1,19 @@
 .hero {
+    position: relative;
     display: flex;
     align-items: center;
-    min-height: calc(100vh - 70px); // To align with header height
+    min-height: calc(100vh - 70px);
     padding: 6rem 0 7rem;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 85% 18%,
+            rgba(23, 74, 66, 0.1),
+            transparent 32%),
+        linear-gradient(135deg,
+            #f8f5ef 0%,
+            #ffffff 58%,
+            #f3f7f4 100%);
 
     &__layout {
         display: grid;
@@ -70,13 +81,14 @@
         justify-content: center;
         min-height: 48px;
         padding: 0.75rem 1.4rem;
-        border: 1px solid var(--color-accent);
+        border: 1px solid #174a42;
         text-decoration: none;
         font-size: 0.9rem;
         font-weight: 650;
         transition:
             background-color 150ms ease,
             color 150ms ease,
+            border-color 150ms ease,
             transform 150ms ease;
 
         &:hover {
@@ -84,20 +96,24 @@
         }
 
         &--primary {
-            background: var(--color-accent);
-            color: white;
+            background-color: #174a42;
+            color: #ffffff;
 
             &:hover {
-                background: #123d36;
+                background-color: #123d36;
+                border-color: #123d36;
+                color: #ffffff;
             }
         }
 
         &--secondary {
-            color: var(--color-accent);
+            background-color: transparent;
+            color: #174a42;
 
             &:hover {
-                background: var(--color-accent);
-                color: white;
+                background-color: #174a42;
+                border-color: #174a42;
+                color: #ffffff;
             }
         }
     }
@@ -108,7 +124,13 @@
         justify-self: end;
         overflow: hidden;
         aspect-ratio: 4 / 5;
+
+        border: 1px solid rgba(23, 74, 66, 0.14);
+        border-radius: 24px;
         background: var(--color-border);
+        box-shadow:
+            0 20px 45px rgba(23, 74, 66, 0.12),
+            0 4px 12px rgba(0, 0, 0, 0.04);
     }
 
     &__image {

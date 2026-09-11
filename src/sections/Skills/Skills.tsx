@@ -2,12 +2,15 @@ import './Skills.scss'
 
 type SkillGroup = {
     category: string
+    description: string
     skills: string[]
 }
 
 const skillGroups: SkillGroup[] = [
     {
         category: 'Frontend',
+        description:
+            'Building maintainable interfaces, reusable components and scalable frontend architecture.',
         skills: [
             'React',
             'TypeScript',
@@ -22,6 +25,8 @@ const skillGroups: SkillGroup[] = [
     },
     {
         category: 'Backend',
+        description:
+            'Developing REST APIs and backend services with a focus on security and clean architecture.',
         skills: [
             'Java',
             'Spring Boot',
@@ -35,6 +40,8 @@ const skillGroups: SkillGroup[] = [
     },
     {
         category: 'Testing',
+        description:
+            'Improving release confidence through unit, integration and end-to-end testing.',
         skills: [
             'Jest',
             'Playwright',
@@ -45,6 +52,8 @@ const skillGroups: SkillGroup[] = [
     },
     {
         category: 'Engineering',
+        description:
+            'Supporting reliable delivery through automation, cloud tooling and engineering practices.',
         skills: [
             'Git',
             'Docker',
@@ -62,21 +71,32 @@ function Skills() {
         <section id="skills" className="skills">
             <div className="container">
                 <div className="skills__header">
-                    <p className="skills__eyebrow">Skills</p>
-                    <h2>Tools and technologies I work with.</h2>
+                    <p className="skills__eyebrow">Technical profile</p>
+
+                    <h2>
+                        A frontend-focused engineer with full-stack experience.
+                    </h2>
                 </div>
 
                 <div className="skills__groups">
-                    {skillGroups.map(group => (
-                        <div className="skills__group" key={group.category}>
-                            <h3>{group.category}</h3>
+                    {skillGroups.map((group, index) => (
+                        <article className="skills__group" key={group.category}>
+                            <div className="skills__group-number">
+                                {String(index + 1).padStart(2, '0')}
+                            </div>
 
-                            <ul>
-                                {group.skills.map((skill) => (
-                                    <li key={skill}>{skill}</li>
-                                ))}
-                            </ul>
-                        </div>
+                            <div className="skills__group-content">
+                                <h3>{group.category}</h3>
+
+                                <p>{group.description}</p>
+
+                                <ul>
+                                    {group.skills.map((skill) => (
+                                        <li key={skill}>{skill}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </article>
                     ))}
                 </div>
             </div>
