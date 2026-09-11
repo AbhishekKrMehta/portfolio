@@ -1,5 +1,6 @@
-import { useState } from 'react'
 import './Navigation.scss'
+
+import { useState } from 'react'
 
 function Navigation() {
     const [isOpen, setIsOpen] = useState(false)

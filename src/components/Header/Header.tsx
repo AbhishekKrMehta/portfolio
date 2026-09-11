@@ -1,4 +1,5 @@
 import './Header.scss'
+
 import Navigation from '../Navigation/Navigation'
 
 type HeaderProps = {
