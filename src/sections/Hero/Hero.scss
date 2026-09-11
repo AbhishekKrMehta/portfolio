@@ -38,6 +38,7 @@
     h1 {
         max-width: 800px;
         margin: 0;
+        color: var(--color-text);
         font-size: clamp(3.25rem, 6vw, 6rem);
         font-weight: 650;
         line-height: 0.95;
@@ -71,6 +72,7 @@
 
     &__actions {
         display: flex;
+        flex-wrap: wrap;
         gap: 1rem;
         margin-top: 2.75rem;
     }
@@ -81,7 +83,8 @@
         justify-content: center;
         min-height: 48px;
         padding: 0.75rem 1.4rem;
-        border: 1px solid #174a42;
+        border: 1px solid var(--color-accent);
+        border-radius: 4px;
         text-decoration: none;
         font-size: 0.9rem;
         font-weight: 650;
@@ -96,25 +99,23 @@
         }
 
         &--primary {
-            background-color: #174a42;
+            background-color: var(--color-accent);
             color: #ffffff;
 
             &:hover {
                 background-color: var(--color-accent-dark);
-                ;
                 border-color: var(--color-accent-dark);
-                ;
                 color: #ffffff;
             }
         }
 
         &--secondary {
             background-color: transparent;
-            color: #174a42;
+            color: var(--color-accent);
 
             &:hover {
-                background-color: #174a42;
-                border-color: #174a42;
+                background-color: var(--color-accent);
+                border-color: var(--color-accent);
                 color: #ffffff;
             }
         }
@@ -126,7 +127,6 @@
         justify-self: end;
         overflow: hidden;
         aspect-ratio: 4 / 5;
-
         border: 1px solid rgba(23, 74, 66, 0.14);
         border-radius: 24px;
         background: var(--color-border);
@@ -140,6 +140,11 @@
         height: 100%;
         object-fit: cover;
         object-position: center 35%;
+        transition: transform 300ms ease;
+    }
+
+    &__image-wrapper:hover &__image {
+        transform: scale(1.02);
     }
 }
 
@@ -184,6 +189,10 @@
             align-items: stretch;
         }
 
+        &__action {
+            width: 100%;
+        }
+
         &__image-wrapper {
             max-width: 100%;
             aspect-ratio: 4 / 3;
@@ -192,6 +201,24 @@
 
         &__image {
             object-position: center 38%;
+        }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero {
+
+        &__action,
+        &__image {
+            transition: none;
+        }
+
+        &__action:hover {
+            transform: none;
+        }
+
+        &__image-wrapper:hover &__image {
+            transform: none;
         }
     }
 }
