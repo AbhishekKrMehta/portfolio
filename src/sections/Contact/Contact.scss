@@ -1,7 +1,7 @@
 .contact {
     padding: 10rem 0;
-    background: var(--color-accent);
-    color: white;
+    background: var(--color-contact);
+    color: #ffffff;
 
     &__content {
         max-width: 850px;
@@ -9,6 +9,7 @@
 
     &__eyebrow {
         margin: 0 0 1.5rem;
+        color: rgba(255, 255, 255, 0.8);
         font-size: 0.8rem;
         font-weight: 700;
         letter-spacing: 0.14em;
@@ -17,6 +18,7 @@
 
     h2 {
         margin: 0;
+        color: #ffffff;
         font-size: clamp(3rem, 7vw, 6rem);
         font-weight: 600;
         line-height: 0.95;
@@ -26,36 +28,65 @@
     &__description {
         max-width: 650px;
         margin: 2rem 0 0;
+        color: rgba(255, 255, 255, 0.8);
         font-size: 1.1rem;
         line-height: 1.7;
-        opacity: 0.8;
     }
 
     &__email {
         display: inline-block;
+        max-width: 100%;
         margin-top: 2.5rem;
-        color: white;
+        overflow-wrap: anywhere;
+        color: #ffffff;
         font-size: clamp(1.2rem, 3vw, 1.75rem);
         font-weight: 600;
+        line-height: 1.4;
         text-decoration: none;
-        border-bottom: 1px solid currentColor;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.35rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.65);
+        transition:
+            color 150ms ease,
+            border-color 150ms ease;
+
+        &:hover {
+            color: #dcebe7;
+            border-color: #dcebe7;
+        }
+
+        &:focus-visible {
+            outline: 2px solid #ffffff;
+            outline-offset: 5px;
+        }
     }
 
     &__links {
         display: flex;
-        gap: 2rem;
+        flex-wrap: wrap;
+        gap: 1rem 2rem;
         margin-top: 3rem;
 
         a {
-            color: white;
+            color: #ffffff;
             font-size: 0.9rem;
             font-weight: 600;
             text-decoration: none;
+            text-underline-offset: 0.25rem;
             opacity: 0.75;
-            transition: opacity 150ms ease;
+            transition:
+                color 150ms ease,
+                opacity 150ms ease;
 
             &:hover {
+                color: #dcebe7;
                 opacity: 1;
+                text-decoration: underline;
+            }
+
+            &:focus-visible {
+                outline: 2px solid #ffffff;
+                outline-offset: 5px;
             }
         }
     }
@@ -64,5 +95,31 @@
 @media (max-width: 640px) {
     .contact {
         padding: 7rem 0;
+
+        &__description {
+            font-size: 1rem;
+        }
+
+        &__email {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+        }
+
+        &__links {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-top: 2.5rem;
+        }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contact {
+
+        &__email,
+        &__links a {
+            transition: none;
+        }
     }
 }
