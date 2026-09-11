@@ -22,8 +22,10 @@ function Hero() {
                         </p>
 
                         <p className="hero__technologies">
-                            JavaScript <span>·</span> TypeScript <span>·</span> Angular
-                            <span>·</span> React <span>|</span> Java <span>·</span> Spring Boot
+                            JavaScript <span>·</span> TypeScript <span>·</span> Angular <span>·</span> React
+                        </p>
+                        <p className="hero__technologies">
+                            Java <span>·</span> Spring Boot
                         </p>
 
                         <div className="hero__actions">

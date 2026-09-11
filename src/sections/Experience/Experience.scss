@@ -31,44 +31,64 @@
 
     &__item {
         display: grid;
-        grid-template-columns: 180px minmax(0, 1fr);
-        gap: 3rem;
+        grid-template-columns: 220px minmax(0, 1fr);
+        gap: 4rem;
         padding: 3rem 0;
         border-bottom: 1px solid var(--color-border);
     }
 
-    &__meta {
-        color: var(--color-text-muted);
-        font-size: 0.9rem;
-        line-height: 1.5;
-    }
-
-    &__details {
-        max-width: 800px;
+    &__company-column {
+        min-width: 0;
     }
 
     &__company {
-        margin: 0 0 0.5rem;
-        color: var(--color-accent);
-        font-size: 0.85rem;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-    }
-
-    h3 {
         margin: 0;
-        color: var(--color-text);
-        font-size: 1.6rem;
-        font-weight: 650;
-        letter-spacing: -0.03em;
+        color: var(--color-accent);
+        font-size: 1.2rem;
+        font-weight: 700;
+        line-height: 1.35;
+        letter-spacing: -0.02em;
     }
 
     &__role {
-        margin: 0.5rem 0 1.5rem;
-        color: var(--color-text-muted);
-        font-size: 0.95rem;
+        margin: 0.75rem 0 0;
+        color: var(--color-text);
+        font-size: 0.9rem;
         font-weight: 600;
+        line-height: 1.5;
+    }
+
+    &__meta {
+        margin: 0.5rem 0 0;
+        color: var(--color-text-muted);
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+    &__projects {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        min-width: 0;
+    }
+
+    &__project {
+        padding-bottom: 3rem;
+        border-bottom: 1px solid var(--color-border);
+
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+    }
+
+    h3 {
+        margin: 0 0 1.5rem;
+        color: var(--color-text);
+        font-size: 1.6rem;
+        font-weight: 650;
+        line-height: 1.2;
+        letter-spacing: -0.03em;
     }
 
     &__highlights {
@@ -111,7 +131,7 @@
 
             &:hover {
                 border-color: var(--color-accent);
-                background-color: rgba(23, 74, 66, 0.04);
+                background-color: rgb(23 74 66 / 4%);
                 color: var(--color-accent);
             }
         }
@@ -121,8 +141,12 @@
 @media (max-width: 900px) {
     .experience {
         &__item {
-            grid-template-columns: 140px minmax(0, 1fr);
-            gap: 2rem;
+            grid-template-columns: 170px minmax(0, 1fr);
+            gap: 2.5rem;
+        }
+
+        &__company {
+            font-size: 1.1rem;
         }
     }
 }
@@ -137,16 +161,20 @@
 
         &__item {
             grid-template-columns: 1fr;
-            gap: 1rem;
+            gap: 2rem;
             padding: 2.5rem 0;
         }
 
-        &__meta {
-            font-size: 0.85rem;
+        &__projects {
+            gap: 2.5rem;
         }
 
-        &__details {
-            max-width: none;
+        &__project {
+            padding-bottom: 2.5rem;
+        }
+
+        &__company {
+            font-size: 1.15rem;
         }
 
         h3 {
