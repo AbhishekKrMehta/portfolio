@@ -100,8 +100,10 @@
             color: #ffffff;
 
             &:hover {
-                background-color: #123d36;
-                border-color: #123d36;
+                background-color: var(--color-accent-dark);
+                ;
+                border-color: var(--color-accent-dark);
+                ;
                 color: #ffffff;
             }
         }
