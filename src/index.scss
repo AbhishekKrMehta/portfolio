@@ -51,7 +51,7 @@ section {
   scroll-margin-top: 70px;
 }
 
-section:not(#hero) {
+section:not(.hero) {
   padding: 100px 0;
 }
 
@@ -69,22 +69,6 @@ section:not(#hero) {
 
 #projects {
   background: var(--color-bg);
-}
-
-/* Strong final section */
-
-#contact {
-  background: var(--color-contact);
-  color: #ffffff;
-}
-
-#contact .section-header p,
-#contact p {
-  color: rgba(255, 255, 255, 0.78);
-}
-
-#contact a {
-  color: #ffffff;
 }
 
 .container {
@@ -112,7 +96,7 @@ section:not(#hero) {
 }
 
 @media (max-width: 768px) {
-  section:not(#hero) {
+  section:not(.hero) {
     padding: 72px 0;
   }
 
