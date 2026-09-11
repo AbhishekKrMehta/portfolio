@@ -17,7 +17,9 @@ function Footer() {
                     using React
                 </p>
 
-                <a href="#">Back to top ↑</a>
+                <a className="footer__top-link" href="#top">
+                    Back to top ↑
+                </a>
             </div>
         </footer>
     )

@@ -1,6 +1,6 @@
 .footer {
     padding: 1.5rem 0;
-    background: #174a42;
+    background: var(--color-contact);
     color: #ffffff;
 
     &__inner {
@@ -23,7 +23,7 @@
     }
 
     p {
-        color: rgba(255, 255, 255, 0.78);
+        color: rgb(255 255 255 / 78%);
     }
 
     a {
@@ -37,6 +37,11 @@
     a:hover {
         opacity: 0.75;
     }
+
+    a:focus-visible {
+        outline: 2px solid #ffffff;
+        outline-offset: 4px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -44,6 +49,14 @@
         &__inner {
             flex-direction: column;
             align-items: flex-start;
+        }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .footer {
+        a {
+            transition: none;
         }
     }
 }

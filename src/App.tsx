@@ -9,7 +9,7 @@ import Footer from './components/Footer/Footer'
 
 function App() {
   return (
-    <>
+    <div id="top">
       <Header name="Abhishek" />
 
       <main>
@@ -22,7 +22,7 @@ function App() {
       </main>
 
       <Footer />
-    </>
+    </div>
   )
 }
 
