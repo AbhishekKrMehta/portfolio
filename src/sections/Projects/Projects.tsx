@@ -32,14 +32,7 @@ const projects: Project[] = [
     title: "Personal Portfolio",
     description:
       "A personal engineering portfolio built from scratch with React, TypeScript, Vite and SCSS. It presents my professional experience, technical skills and selected projects through a responsive interface focused on clear information architecture and maintainable component design.",
-    technologies: [
-      "React",
-      "TypeScript",
-      "Vite",
-      "SCSS",
-      "Responsive Design",
-      "Accessibility",
-    ],
+    technologies: ["React", "TypeScript"],
     githubUrl: "https://github.com/AbhishekKrMehta/portfolio",
   },
 ];

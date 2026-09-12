@@ -12,10 +12,10 @@ const skillGroups: SkillGroup[] = [
     description:
       "Building maintainable interfaces, reusable components and scalable frontend architecture.",
     skills: [
-      "React",
-      "TypeScript",
       "JavaScript",
+      "TypeScript",
       "Angular",
+      "React",
       "RxJS",
       "NgRx",
       "Vue.js",
@@ -35,6 +35,8 @@ const skillGroups: SkillGroup[] = [
       "Spring Data JPA",
       "Hibernate",
       "REST APIs",
+      "JWT Authentication",
+      "Validation",
       "PostgreSQL",
     ],
   },
@@ -42,20 +44,30 @@ const skillGroups: SkillGroup[] = [
     category: "Testing",
     description:
       "Improving release confidence through unit, integration and end-to-end testing.",
-    skills: ["Jest", "Playwright", "Cypress", "JUnit", "Mockito"],
+    skills: ["Jest", "Jasmine", "Playwright", "Cypress", "JUnit", "Mockito"],
   },
   {
-    category: "Engineering",
+    category: "Tools",
     description:
-      "Supporting reliable delivery through automation, cloud tooling and engineering practices.",
+      "Tools for development, automation, containerisation and cloud deployment.",
     skills: [
       "Git",
+      "GitHub/GitLab",
+      "Nx Monorepo",
       "Docker",
       "AWS",
+      "GitHub Actions",
+    ],
+  },
+  {
+    category: "Practices",
+    description:
+      "Applying collaborative development practices that support quality, maintainability and continuous delivery.",
+    skills: [
+      "Agile/Scrum",
       "CI/CD",
-      "Nx Monorepo",
       "Clean Architecture",
-      "Performance Optimization",
+      "Performance Optimisation",
     ],
   },
 ];

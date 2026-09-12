@@ -16,9 +16,9 @@ function About() {
         <div className="about__content">
           <div className="about__intro">
             <p>
-              I’m a software engineer with 9+ years of professional experience
-              building and evolving enterprise web applications across the
-              energy, banking and aviation sectors.
+              I'm a software engineer who builds and evolves enterprise web
+              applications, with extensive domain experience in sectors like
+              energy, banking and aviation.
             </p>
 
             <p>
@@ -28,7 +28,7 @@ function About() {
             </p>
 
             <p>
-              I’m also expanding my backend expertise with Java and Spring Boot,
+              I'm also expanding my backend expertise with Java and Spring Boot,
               applying that knowledge to full-stack applications such as
               MovieCompass.
             </p>
