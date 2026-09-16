@@ -101,6 +101,10 @@
     height: 1.15rem;
     flex-shrink: 0;
   }
+
+  &__emphasis {
+    color: #d6e8a8;
+  }
 }
 
 @media (width <=640px) {

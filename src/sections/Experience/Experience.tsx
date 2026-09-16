@@ -67,7 +67,7 @@ const experiences: ExperienceItem[] = [
       {
         name: "Clockwork",
         highlights: [
-          "Redesigned the homepage using Vue.js and Vuetify.",
+          "Redesigned the homepage using Vue and Vuetify.",
           "Contributed to backend services using Java and Spring Boot.",
         ],
         technologies: ["Vue.js", "JavaScript", "Java", "Spring Boot"],

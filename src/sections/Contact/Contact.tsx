@@ -55,11 +55,15 @@ function Contact() {
         <div className="contact__content">
           <p className="contact__eyebrow">Contact</p>
 
-          <h2>Let's build something useful.</h2>
+          <h2>
+            Let's build something useful,
+            <br />
+            <span className="contact__emphasis">Together.</span>
+          </h2>
 
           <p className="contact__description">
             I'm open to discussing software engineering opportunities,
-            interesting projects, and collaborations.
+            interesting projects and collaborations.
           </p>
 
           <a
