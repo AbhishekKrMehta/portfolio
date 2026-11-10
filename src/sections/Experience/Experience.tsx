@@ -33,6 +33,7 @@ const experiences: ExperienceItem[] = [
         ],
         technologies: [
           "Angular",
+          "React",
           "TypeScript",
           "Playwright",
           "Java",
@@ -93,18 +94,10 @@ const experiences: ExperienceItem[] = [
       {
         name: "Cisco Systems",
         highlights: [
-          "Built a CRM application from scratch using Angular and Java.",
+          "Built a CRM application from scratch",
           "Delivered the MVP within six months under tight deadlines.",
         ],
-        technologies: ["Angular", "TypeScript", "RxJS", "Java"],
-      },
-      {
-        name: "Barclays",
-        highlights: [
-          "Enhanced UI features and ensured cross-browser compatibility.",
-          "Implemented accessibility improvements aligned with WCAG standards.",
-        ],
-        technologies: ["JavaScript", "HTML", "CSS", "JQuery"],
+        technologies: ["Angular", "React", "TypeScript", "RxJS", "Java"],
       },
     ],
   },
